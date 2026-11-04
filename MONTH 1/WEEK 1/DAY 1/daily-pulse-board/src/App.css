@@ -1,0 +1,74 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #f4f0ff, #e8f5ff);
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  min-height: auto;
+  border: 0;
+}
+
+.pulse-board {
+  width: min(500px, 85%);
+  padding: 40px 25px;
+  margin: 20px auto;
+  text-align: center;
+  color: #252238;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(53, 44, 90, 0.15);
+}
+
+.pulse-board h1 {
+  margin: 0 0 12px;
+  font-size: 38px;
+  color: #5145cd;
+}
+.pulse-board h2 {
+  margin: 0 0 12px;
+  font-size: 28px;
+  color: #5145cd;
+}
+
+.mood-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.mood-button {
+  padding: 12px 18px;
+  border: 2px solid #ded9ff;
+  border-radius: 12px;
+  background-color: #f8f7ff;
+  color: #373151;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.mood-button:hover {
+  border-color: #7568e8;
+}
+
+.mood-button.selected {
+  color: white;
+  background-color: #6457dc;
+  border-color: #6457dc;
+  transform: scale(1.08);
+}
+
+.reset-button {
+  margin-top: 16px;
+  padding: 9px 16px;
+  color: #6457dc;
+  background-color: transparent;
+  border: 1px solid #6457dc;
+  border-radius: 8px;
+  cursor: pointer;
+}
